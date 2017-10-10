@@ -1,0 +1,14 @@
+options -Indexes
+ErrorDocument 404 /PersonalUAB/view/error/err.html
+ErrorDocument 401 /PersonalUAB/view/error/err.html
+ErrorDocument 400 /PersonalUAB/view/error/err.html
+ErrorDocument 403 /PersonalUAB/view/error/err.html
+ErrorDocument 504 /PersonalUAB/view/error/err.html
+
+<FilesMatch "(\.(bak|config|dist|fla|inc|ini|log|psd|sh|sql|swp)|~)$">
+    Order allow,deny
+    Deny from all
+    Satisfy All
+</FilesMatch>
+
+AddDefaultCharset utf-8

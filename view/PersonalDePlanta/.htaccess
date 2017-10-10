@@ -1,0 +1,28 @@
+RewriteEngine on
+Options -Indexes +FollowSymlinks
+
+RewriteRule ^Personal-Crear.html  index.php?modo=regPersonal
+RewriteRule ^Personal-Lista.html  index.php?modo=listaPersonal
+RewriteRule ^Personal-Evaluacion-Meritos.html  index.php?modo=evaluacionMeritos
+RewriteRule ^Personal-Editar.html index.php?modo=editarPersonal
+RewriteRule ^Personal-Down.html index.php?modo=darDeBajaPersonal
+RewriteRule ^Personal-Up.html index.php?modo=habilitarPersonal
+RewriteRule ^Personal-Curriculum.html index.php?modo=verHojaDeVida
+RewriteRule ^Personal-Birthday.html index.php?modo=cumplePersonal
+
+RewriteRule ^Meritos-Lista.html index.php?modo=tablaCalificacionMeritosDocente
+RewriteRule ^Meritos-Registrar.html index.php?modo=NuevaTablaMeritos
+RewriteRule ^Meritos-Up.html index.php?modo=tablaMeritoUp
+RewriteRule ^Meritos-Down.html index.php?modo=tablaMeritoDown
+
+RewriteRule ^Usuario-Crear.html  index.php?modo=regUsuario
+RewriteRule ^Usuario-Lista.html  index.php?modo=listaUsuario
+
+RewriteRule ^Documentos.html index.php?modo=documentos
+
+RewriteRule ^Configuraciones.html index.php?modo=config
+RewriteRule ^Configuraciones-Editar.html index.php?modo=cambiarAccesosFecha
+
+RewriteRule ^Reportes.html index.php?modo=reportes
+
+RewriteRule ^Directorio.html index.php?modo=directorio
